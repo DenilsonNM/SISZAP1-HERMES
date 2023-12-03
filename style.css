@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7c7773;
+}
+.borde {
+  border: 1px red solid;
+}
+
+/* include menu */
+
+.divtop {
+  background-color: #f1edea;
+  text-align: center;
+  padding: 5px;
+  color: #7c7773;
+  height: 30px;
+}
+.logonom h3 {
+  color: #dbd3cc;
+}
+.divtop2 {
+  padding: 20px;
+  height: 90px;
+}
+h1 {
+  font-size: 50px;
+  color: #7c7773;
+}
+h2 {
+  color: #7c7773;
+}
+.logonom {
+  text-align: center;
+  float: left;
+  margin-left: 550px;
+}
+.logonom2 {
+  text-align: center;
+  padding-top: 15px;
+}
+.loginlogo {
+  float: right;
+}
+.loginlogo a {
+  border: 2px #333 solid;
+  display: inline-block;
+  height: 54px;
+  border-radius: 40px;
+}
+.loginlogo a:hover {
+  border: 2px #dbd3cc solid;
+}
+.usermenu {
+  clear: both;
+  text-align: center;
+  /* background-color: #ECF2F6; */
+  padding: 10px;
+}
+.usermenu a {
+  clear: both;
+  display: inline-block;
+  text-decoration: none;
+  width: 130px;
+  height: 40px;
+  color: #f1edea;
+  background-color: #494643;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 30px;
+}
+.usermenu a:hover {
+  background-color: #7c7773;
+}
+.divtitulo {
+  text-align: center;
+  padding: 30px;
+}
+.lineanegra {
+  background-color: #333;
+  padding: 4px;
+  margin: 20px 30px;
+  border-radius: 5px;
+}
+
+/* index */
+.ofertalogo {
+  padding-top: 7px;
+  text-align: center;
+  background-color: #494643;
+}
+.video {
+  padding: 20px;
+  text-align: center;
+  /* background-color: #ECF2F6; */
+}
+.tablaten {
+  display: flex;
+  padding: 30px;
+}
+.acercade {
+  padding: 10px;
+  text-align: justify;
+}
+.tablalentes {
+  text-align: center;
+  padding: 10px;
+}
+
+.tablalentes a {
+  font-weight: lighter;
+  display: inline-block;
+  text-decoration: none;
+  color: #f1edea;
+  background-color: #494643;
+  border-radius: 15px;
+  padding: 10px;
+  width: 130px;
+  height: 40px;
+  margin: 20px;
+}
+.tablalentes a:hover {
+  background-color: #7c7773;
+}
+.tablaprecio {
+  color: #7c7773;
+}
+
+/* include divfinal */
+
+.divfinal {
+  clear: both;
+  background-color: #333;
+  margin-top: 20px;
+  color: #f1edea;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.mapa {
+  padding: 20px;
+  text-align: center;
+}
+.divcontac {
+  padding: 20px;
+  text-align: center;
+}
+.divcontac2 {
+  padding: 10px;
+  border: 1px #ecf2f6 solid;
+  text-align: left;
+}
+
+.lineafinal {
+  text-align: center;
+  background-color: #f1edea;
+  padding: 10px;
+}
+.lineafinal a {
+  border: 2px #333 solid;
+  display: inline-block;
+  height: 54px;
+  border-radius: 40px;
+}
+.lineafinal a:hover {
+  border: 2px #7c7773 solid;
+}
+
+/* encargo.php */
+
+.formcorreo2 {
+  padding: 10px;
+  text-align: center;
+}
+.formcorreo2 form {
+  display: inline-block;
+}
+.formcorreo2 fieldset {
+  padding: 20px;
+}
+.formcorreo2 button {
+  color: #f1edea;
+  border: none;
+  background-color: #494643;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.formcorreo2 button:hover {
+  background-color: #7c7773;
+}
+.formcorreo2 input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 300px;
+  padding: 5px;
+}
+.formcorreo2 textarea {
+  width: 300px;
+  resize: none;
+  padding: 5px;
+}
+/* login admin */
+
+.formlogin {
+  padding: 10px;
+  text-align: center;
+}
+.formlogin form {
+  display: inline-block;
+}
+.formlogin fieldset {
+  padding: 20px;
+}
+.formlogin input[type="text"],
+input[type="number"]{
+  width: 300px;
+  padding: 5px;
+  
+}
+.formlogininput {
+  color: #f1edea;
+  border: none;
+  background-color: #494643;
+  padding: 10px 15px;
+  border-radius: 15px;
+  /* font-size: 20px; */
+}
+.formlogininput:hover {
+  background-color: #58a848;
+}
+.cerrses {
+  text-align: center;
+  /* display: inline-block; */
+}
+.cerrses a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f1edea;
+  background-color: #494643;
+  padding: 10px;
+  border-radius: 15px;
+  /* font-weight: bold; */
+}
+.cerrses a:hover {
+  background-color: #aa5567;
+}
+.cerrses2 {
+  text-align: center;
+}
+.cerrses2 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f1edea;
+  background-color: #494643;
+  padding: 10px;
+  border-radius: 15px;
+  /* font-weight: bold; */
+}
+.cerrses2 a:hover {
+  background-color: #aa5567;
+}
+.logoadmin {
+  text-align: center;
+}
+
+.errorlogin {
+  color: #ac1637;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.tablausu {
+  clear: both;
+  text-align: center;
+}
+.tablausu table {
+  border-collapse: collapse;
+  /* border: 1px #666666 solid; */
+  display: inline-block;
+}
+.tablausu th {
+  background-color: #494643;
+  color: #f1edea;
+  padding: 10px;
+}
+.tablausu td {
+  padding: 10px;
+  /* background-color: #ECF2F6; */
+  border-bottom: 1px #7c7773 solid;
+}
+.tablausu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #aa5567;
+}
+.tablausu a:hover {
+  text-decoration: underline;
+}
