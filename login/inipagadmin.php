@@ -14,5 +14,5 @@ require "proteccion.php";
   <a href="logininicio.php">INICIO</a>
   <a href="prodadmin.php">PRODUCTOS</a>
   <a href="usuadmin.php">EMPLEADOS</a>
-  <a href="usuadmin.php">VENTAS</a>
+  <a href="ventadmin.php">VENTAS</a>
 </div>
