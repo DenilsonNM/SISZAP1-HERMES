@@ -15,12 +15,10 @@
   ?>
   <div class="divtitulo">
     <h2>Administrador</h2>
+    <br>
+    <img src="../images/logoadmin.png" width="50">
     <div class="lineanegra"></div>
   </div>
-  <div class="logoadmin">
-    <img src="../images/logoadmin.png" alt="logoadmin" width="70">
-  </div>
-  <br>
   <div class="cerrses"><a href="cerrarsesion.php" onclick="return confirm('¿Estás seguro de que deseas salir?')">CERRAR SESIÓN</a></div>
   <?php
   include "finpagadmin.php";

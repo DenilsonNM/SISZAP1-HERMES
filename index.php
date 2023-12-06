@@ -29,12 +29,18 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus delectus ipsa, qui ratione autem est ducimus porro repellendus! Rerum obcaecati aliquam ducimus. Quidem excepturi commodi consequatur sapiente quibusdam porro asperiores?
         <br><br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores officiis nihil aliquid distinctio dolore eum id, architecto aspernatur laudantium reprehenderit delectus similique deleniti earum quaerat neque voluptatibus maiores tenetur.
+        <br><br>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum quod reprehenderit
+        </li>
+        <li> ratione recusandae in quo possimus, eaque voluptates, eveniet harum distinctio at voluptate dignissimos? Corrupti unde voluptates voluptatum odio!</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur vitae deleniti</li>
       </p>
     </div>
     <div class="tablalentes">
       <h2>Nuevo 2023:</h2>
       <br>
-      <table>
+      <table class="tendencias">
         <tr>
           <th>Marca</th>
           <th>Modelo</th>
@@ -47,7 +53,8 @@
         require "login/conexion.php";
         $todosUsuarios = "SELECT * FROM productos ORDER BY prod_id ASC";
         $resultado = mysqli_query($conectar, $todosUsuarios);
-        while ($row = mysqli_fetch_assoc($resultado)) {
+        $limite = 0;
+        for ($filasMostradas = 0; $row = mysqli_fetch_assoc($resultado) and $filasMostradas < 3; $filasMostradas++) {
         ?>
           <tr>
             <td><?php echo $row["marca"]; ?></td>
@@ -66,9 +73,8 @@
       <a href="catalogo.php">Saber más</a>
     </div>
   </div>
-
   <div class="video">
-    <iframe class="" width="860" height="415" src="https://www.youtube.com/embed/FMmIvmbZ-6c?si=_7BIWBceVhFj-8o6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    <iframe class="" width="100%" height="415" src="https://www.youtube.com/embed/FMmIvmbZ-6c?autoplay=1&mute=1&loop=1&controls=0&si=_7BIWBceVhFj-8o6" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"></iframe>
     <br><br>
     <h2>Entérate de lo ultimo en moda.</h2>
   </div>

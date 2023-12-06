@@ -44,8 +44,8 @@
         <br><br>
         <label for="estado">Estado:</label>
         <select name="estado" id="estado" required>
-          <option value="disponible">Disponible</option>
-          <option value="agotado">Agotado</option>
+          <option value="Disponible">Disponible</option>
+          <option value="Agotado">Agotado</option>
         </select>
         <br><br>
         <label for="stock">Stock:</label>

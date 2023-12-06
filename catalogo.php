@@ -42,7 +42,7 @@
           <?php
           echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
           ?>
-          <td><?php echo $row["estado"]; ?></td>
+          <td class="estado"><?php echo $row["estado"]; ?></td>
         </tr>
       <?php
       }

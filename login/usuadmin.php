@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,15 @@
   <title>Hermes</title>
   <link rel="stylesheet" href="../style.css?v=1">
 </head>
+
 <body>
   <?php
-    include "inipagadmin.php";
+  include "inipagadmin.php";
   ?>
-   <div class="divtitulo">
+  <div class="divtitulo">
     <h2>Menú de empleados</h2>
+    <br>
+    <img src="../images/loginlogo.png" width="50">
     <div class="lineanegra"></div>
   </div>
   <div class="usermenu">
@@ -21,7 +25,8 @@
   </div>
   <br><br>
   <?php
-    include "finpagadmin.php";
+  include "finpagadmin.php";
   ?>
 </body>
+
 </html>

@@ -107,7 +107,6 @@ h2 {
 .acercade {
   padding: 10px;
   text-align: justify;
-  max-width: 50%;
 }
 .tablalentes {
   text-align: center;
@@ -236,6 +235,7 @@ input[type="number"] {
 }
 .cerrses {
   text-align: center;
+  margin-bottom: 79px;
   /* display: inline-block; */
 }
 .cerrses a {
@@ -303,7 +303,21 @@ input[type="number"] {
 .tablausu a:hover {
   text-decoration: underline;
 }
+.estado {
+  font-weight: bold;
+  color: #aa5567;
+}
 .tendencias {
-  width: 25%;
   border-collapse: collapse;
+  text-align: center;
+  display: inline-block;
+}
+.tendencias th {
+  background-color: #494643;
+  color: #f1edea;
+  padding: 10px;
+}
+.tendencias td {
+  padding: 10px;
+  border-bottom: 1px #7c7773 solid;
 }

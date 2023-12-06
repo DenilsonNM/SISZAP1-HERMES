@@ -15,6 +15,8 @@
   ?>
   <div class="divtitulo">
     <h2>Menú de ventas</h2>
+    <br>
+    <img src="../images/ventalogo.png" width="50">
     <div class="lineanegra"></div>
   </div>
   <div class="usermenu">

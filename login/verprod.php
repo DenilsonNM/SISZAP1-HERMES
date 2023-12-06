@@ -21,7 +21,7 @@
   <div class="tablausu">
     <table>
       <tr>
-        <th>Id</th>
+        <th>ID</th>
         <th>Marca</th>
         <th>Modelo</th>
         <th>Descripción</th>
