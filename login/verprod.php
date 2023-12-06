@@ -30,6 +30,7 @@
         <th>Estado</th>
         <th>Stock</th>
         <th></th>
+        <th></th>
       </tr>
 
       <?php
@@ -49,6 +50,11 @@
           ?>
           <td><?php echo $row["estado"]; ?></td>
           <td><?php echo $row["stock"]; ?></td>
+          <td>
+            <?php
+            echo "<a href='modprod.php?prod_id=" . $row['prod_id'] . "'>Modificar</a>";
+            ?>
+          </td>
           <td><a href="#" onClick="validar('elimprod.php?prod_id=<?php echo $row["prod_id"]; ?>')">Eliminar</a></td>
         </tr>
       <?php

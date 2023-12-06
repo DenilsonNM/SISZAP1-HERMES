@@ -107,6 +107,7 @@ h2 {
 .acercade {
   padding: 10px;
   text-align: justify;
+  max-width: 50%;
 }
 .tablalentes {
   text-align: center;
@@ -218,10 +219,9 @@ input[type="email"] {
   padding: 20px;
 }
 .formlogin input[type="text"],
-input[type="number"]{
+input[type="number"] {
   width: 300px;
   padding: 5px;
-  
 }
 .formlogininput {
   color: #f1edea;
@@ -302,4 +302,8 @@ input[type="number"]{
 }
 .tablausu a:hover {
   text-decoration: underline;
+}
+.tendencias {
+  width: 25%;
+  border-collapse: collapse;
 }

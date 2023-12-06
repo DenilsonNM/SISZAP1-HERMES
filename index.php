@@ -32,36 +32,17 @@
       </p>
     </div>
     <div class="tablalentes">
-      <h2>Tendencias 2023:</h2>
+      <h2>Nuevo 2023:</h2>
       <br>
-      <!-- <table>
-        <tr>
-          <th>NIKE</th>
-          <th>ADIDAS</th>
-          <th>FLEXI</th>
-          <th>UNDERARMOR</th>
-        </tr>
-        <tr>
-          <th><img src="images/MICAHELKORS.png" alt=""></th>
-          <th><img src="images/COACH.png" alt=""></th>
-          <th><img src="images/XIKUCASUAL.png" alt=""></th>
-          <th><img src="images/RAYBAN.png" alt=""></th>
-        </tr>
-        <tr class="tablaprecio">
-          <th>$ 4,799.00</th>
-          <th>$ 6,049.00</th>
-          <th>$ 349.00</th>
-          <th>$ 3,099.00</th>
-        </tr>
-        <tr>
-          <th><a href="catalogo.php">Saber más</a></th>
-          <th><a href="catalogo.php">Saber más</a></th>
-          <th><a href="catalogo.php">Saber más</a></th>
-          <th><a href="catalogo.php">Saber más</a></th>
-        </tr>
-      </table> -->
-
       <table>
+        <tr>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th></th>
+        </tr>
+
         <?php
         require "login/conexion.php";
         $todosUsuarios = "SELECT * FROM productos ORDER BY prod_id ASC";
@@ -69,42 +50,20 @@
         while ($row = mysqli_fetch_assoc($resultado)) {
         ?>
           <tr>
-            <th><?php echo $row["marca"]; ?></td>
-            <th><?php echo $row["marca"]; ?></td>
-            <th><?php echo $row["marca"]; ?></td>
-            <th><?php echo $row["marca"]; ?></td>
-          </tr>
-          <tr>
+            <td><?php echo $row["marca"]; ?></td>
+            <td><?php echo $row["modelo"]; ?></td>
+            <td><?php echo $row["descrip"]; ?></td>
+            <td>$ <?php echo $row["precio"]; ?></td>
             <?php
             echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
             ?>
-            <?php
-            echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
-            ?>
-            <?php
-            echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
-            ?>
-            <?php
-            echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
-            ?>
-          </tr>
-          <tr>
-            <th>$ <?php echo $row["precio"]; ?></td>
-            <th>$ <?php echo $row["precio"]; ?></td>
-            <th>$ <?php echo $row["precio"]; ?></td>
-            <th>$ <?php echo $row["precio"]; ?></td>
-          </tr>
-          <tr>
-            <th><a href="catalogo.php">Saber más</a></th>
-            <th><a href="catalogo.php">Saber más</a></th>
-            <th><a href="catalogo.php">Saber más</a></th>
-            <th><a href="catalogo.php">Saber más</a></th>
           </tr>
         <?php
         }
         mysqli_free_result($resultado)
         ?>
       </table>
+      <a href="catalogo.php">Saber más</a>
     </div>
   </div>
 

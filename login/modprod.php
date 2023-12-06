@@ -14,11 +14,11 @@
   include "inipagadmin.php";
   ?>
   <div class="divtitulo">
-    <h2>Añadir Productos</h2>
+    <h2>Modificar Productos</h2>
     <div class="lineanegra"></div>
   </div>
   <div class="formlogin">
-    <form action="guardarprod.php" method="POST" enctype="multipart/form-data">
+    <form action="" method="POST" enctype="multipart/form-data">
       <fieldset>
         <img src="../images/lenteslogo.png" alt="loginlogo" width="60">
         <br>
@@ -52,7 +52,7 @@
         <br>
         <input type="number" id="stock" name="stock" required>
         <br><br>
-        <input class="formlogininput" type="submit" value="GUARDAR">
+        <input class="formlogininput" type="submit" value="ACTUALIZAR" name="actualizar" >
       </fieldset>
     </form>
   </div>

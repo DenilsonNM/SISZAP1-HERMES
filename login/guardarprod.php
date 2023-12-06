@@ -7,7 +7,7 @@ $marca = $_POST['marca'];
 $modelo = $_POST['modelo'];
 $descrip = $_POST['descrip'];
 $precio = $_POST['precio'];
-$foto = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+$foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 $estado = $_POST['estado'];
 $stock = $_POST['stock'];
 
