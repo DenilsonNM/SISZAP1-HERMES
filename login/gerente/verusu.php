@@ -34,7 +34,7 @@
 
       <?php
       require "../conexion.php";
-      $todosUsuarios = "SELECT * FROM empleados ORDER BY emp_id ASC";
+      $todosUsuarios = "SELECT * FROM empleados WHERE rol != 'admin' ORDER BY emp_id ASC";
       $resultado = mysqli_query($conectar, $todosUsuarios);
       while ($row = mysqli_fetch_assoc($resultado)) {
       ?>

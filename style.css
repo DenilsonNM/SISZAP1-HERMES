@@ -113,14 +113,12 @@ h2 {
 
 .ofertalogo {
   display: flex;
-  padding: 7px;
-  background-color: #494643;
+  background-color: black;
   align-items: center;
   justify-content: center;
 }
 
 .video {
-  padding: 20px;
   text-align: center;
   /* background-color: #ECF2F6; */
 }

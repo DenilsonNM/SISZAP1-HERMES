@@ -18,12 +18,12 @@
     <div class="lineanegra"></div>
   </div>
   <div class="formlogin">
-    <form action="guardarusu.php" method="POST">
+    <form action="guardarusu.php" method="POST" onsubmit="return validarContr() && validarInput()">
       <fieldset>
         <legend>Datos de perfil</legend>
         <img src="../../images/logoadmin.png" alt="loginlogo" width="60">
         <br><br>
-        <label for="usuario">Nombre de usuario:</label>
+        <label for="usuario">Usuario:</label>
         <br>
         <input type="text" id="usuario" name="usuario" minlength="3" required>
         <br><br>
@@ -85,6 +85,18 @@
         return false;
       }
 
+      return true;
+    }
+  </script>
+  <script>
+    function validarContr() {
+      var contr = document.getElementById("clave").value;
+      var contr2 = document.getElementById("clave2").value;
+
+      if (contr !== contr2) {
+        alert("Las contraseñas son diferentes");
+        return false;
+      }
       return true;
     }
   </script>

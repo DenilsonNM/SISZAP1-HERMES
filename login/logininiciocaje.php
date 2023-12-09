@@ -25,7 +25,7 @@ require "proteccion.php";
     <br><br>
     <a href="logininiciocaje.php">INICIO</a>
     <a href="cajero/ventadmin.php">VENTAS</a>
-    <a href="../catalogo.php" target="_blank">CATÁLOGO</a>
+    <a href="cajero/verprod.php">CATÁLOGO</a>
   </div>
   <div class="divtitulo">
     <h2>Cajero</h2>

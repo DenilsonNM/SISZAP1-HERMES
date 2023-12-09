@@ -66,7 +66,7 @@
             <td><?php echo $row["marca"]; ?></td>
             <td><?php echo $row["modelo"]; ?></td>
             <td><?php echo $row["descrip"]; ?></td>
-            <td>$ <?php echo $row["precio"]; ?></td>
+            <td>$<?php echo $row["precio"]; ?></td>
             <?php
             echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
             ?>
@@ -80,7 +80,7 @@
     </div>
   </div>
   <div class="video">
-    <iframe class="" width="100%" height="415" src="https://www.youtube.com/embed/FMmIvmbZ-6c?autoplay=1&mute=1&loop=1&controls=0&si=_7BIWBceVhFj-8o6" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"></iframe>
+    <iframe class="" width="100%" height="400" src="https://www.youtube.com/embed/FMmIvmbZ-6c?autoplay=1&mute=1&loop=1&controls=0&si=_7BIWBceVhFj-8o6" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"></iframe>
     <br><br>
     <h2>Entérate de lo ultimo en moda</h2>
   </div>
