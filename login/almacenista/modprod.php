@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes</title>
-  <link rel="stylesheet" href="../style.css?v=1">
+  <title>Almacenista</title>
+  <link rel="stylesheet" href="../../style.css?v=1">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
   <div class="formlogin">
     <form action="" method="POST" enctype="multipart/form-data">
       <fieldset>
-        <img src="../images/lenteslogo.png" alt="loginlogo" width="60">
+        <img src="../../images/lenteslogo.png" alt="loginlogo" width="60">
         <br>
         <label for="marca">Marca:</label>
         <br>
@@ -52,14 +52,14 @@
         <br>
         <input type="number" id="stock" name="stock" required>
         <br><br>
-        <input class="formlogininput" type="submit" value="ACTUALIZAR" name="actualizar" >
+        <input class="formlogininput" type="submit" value="ACTUALIZAR" name="actualizar">
       </fieldset>
     </form>
   </div>
   <br>
 
   <?php
-  include "finpagadmin.php";
+  include "../finpagadmin.php";
   ?>
 </body>
 

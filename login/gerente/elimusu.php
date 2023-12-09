@@ -1,5 +1,5 @@
 <?php
-require "conexion.php";
+require "../conexion.php";
 $emp_id =  $_GET["emp_id"];
 
 $consulta = "DELETE FROM empleados WHERE emp_id = '$emp_id'";

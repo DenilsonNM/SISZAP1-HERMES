@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes</title>
-  <link rel="stylesheet" href="../style.css?v=1">
+  <title>Gerente</title>
+  <link rel="stylesheet" href="../../style.css?v=1">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
       </tr>
 
       <?php
-      require "conexion.php";
+      require "../conexion.php";
       $todosUsuarios = "SELECT * FROM empleados ORDER BY emp_id ASC";
       $resultado = mysqli_query($conectar, $todosUsuarios);
       while ($row = mysqli_fetch_assoc($resultado)) {
@@ -58,7 +58,7 @@
   <br>
 
   <?php
-  include "finpagadmin.php";
+  include "../finpagadmin.php";
   ?>
 
   <script>

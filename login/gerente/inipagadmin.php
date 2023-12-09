@@ -11,7 +11,7 @@ require "proteccion.php";
 </div>
 <div class="usermenu">
   <br><br>
-  <a href="logininicio.php">INICIO</a>
+  <a href="../logininicio.php">INICIO</a>
   <a href="prodadmin.php">PRODUCTOS</a>
   <a href="usuadmin.php">EMPLEADOS</a>
   <a href="ventadmin.php">VENTAS</a>

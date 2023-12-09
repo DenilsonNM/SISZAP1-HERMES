@@ -1,5 +1,5 @@
 <?php
-require "conexion.php";
+require "../conexion.php";
 
 $prod_id =  $_GET["prod_id"];
 

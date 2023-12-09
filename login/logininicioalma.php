@@ -8,7 +8,7 @@ require "proteccion.php";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerente</title>
+  <title>Almacenista</title>
   <link rel="stylesheet" href="../style.css?v=1">
 </head>
 
@@ -23,13 +23,11 @@ require "proteccion.php";
   </div>
   <div class="usermenu">
     <br><br>
-    <a href="logininicio.php">INICIO</a>
-    <a href="gerente/prodadmin.php">PRODUCTOS</a>
-    <a href="gerente/usuadmin.php">EMPLEADOS</a>
-    <a href="gerente/ventadmin.php">VENTAS</a>
+    <a href="logininicioalma.php">INICIO</a>
+    <a href="almacenista/prodadmin.php">PRODUCTOS</a>
   </div>
   <div class="divtitulo">
-    <h2>Gerente</h2>
+    <h2>Almacenista</h2>
     <br>
     <img src="../images/logoadmin.png" width="50">
     <div class="lineanegra"></div>
