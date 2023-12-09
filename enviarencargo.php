@@ -15,9 +15,9 @@ include "inipag.php";
 
 <body>
   <div class="divtitulo">
-    <h2>Encargo Enviado</h2>
+    <h2>Correo Enviado</h2>
     <div class="lineanegra"></div>
-    <h3>En el transcurso del día su encargo será atendido. ¡Gracias por confiar en nosotros! <br> Que tenga un lindo día.
+    <h3>¡Gracias por confiar en nosotros! <br> Que tenga un lindo día.
     </h3>
 </body>
 

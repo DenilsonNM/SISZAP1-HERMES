@@ -21,36 +21,19 @@
     <form action="guardarusu.php" method="POST">
       <fieldset>
         <legend>Datos de perfil</legend>
-        <img src="../images/loginlogo.png" alt="loginlogo" width="60">
+        <img src="../images/logoadmin.png" alt="loginlogo" width="60">
         <br><br>
-        <label for="nombre">Nombre:</label>
-        <br>
-        <input type="text" id="nombre" name="nombre" minlength="3" required>
-        <br>
-        <label for="apellido">Apellido:</label>
-        <br>
-        <input type="text" id="apellido" name="apellido" minlength="3" required>
-        <br>
         <label for="usuario">Nombre de usuario:</label>
         <br>
         <input type="text" id="usuario" name="usuario" minlength="3" required>
-        <br>
+        <br><br>
         <label for="clave">Contraseña:</label>
         <br>
         <input type="text" id="clave" name="clave" minlength="3" required>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>Datos de contacto</legend>
-        <img src="../images/loginlogo.png" alt="loginlogo" width="60">
-        <br><br>
-        <label for="telcel">Teléfono:</label>
         <br>
-        <input type="number" id="telcel" name="telcel" min="0" max="9999999999" required>
+        <label for="clave">Confirma tu contraseña:</label>
         <br>
-        <label for="correo">Correo:</label>
-        <br>
-        <input type="email" id="correo" name="correo" minlength="3" required>
+        <input type="text" id="clave2" name="clave2" minlength="3" required>
         <br><br>
         <label for="rol">Rol:</label>
         <select name="rol" id="rol" required>
@@ -60,12 +43,34 @@
         </select>
       </fieldset>
       <br>
-      <input class="formlogininput" type="submit" value="GUARDAR">
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <img src="../images/loginlogo.png" alt="loginlogo" width="60">
+        <br><br>
+        <label for="nombre">Nombre(s):</label>
+        <br>
+        <input type="text" id="nombre" name="nombre" minlength="3" required>
+        <br>
+        <label for="apellido">Apellido(s):</label>
+        <br>
+        <input type="text" id="apellido" name="apellido" minlength="3" required>
+        <br><br>
+        <label for="telcel">Teléfono:</label>
+        <br>
+        <input type="number" id="telcel" name="telcel" minlength="10" required>
+        <br>
+        <label for="correo">Correo:</label>
+        <br>
+        <input type="email" id="correo" name="correo" minlength="3" required>
+      </fieldset>
+      <br>
+      <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar')">
     </form>
   </div>
   <br>
   <!-- <br><br>
-  <div class="cerrses"><a href="../index.php" onclick="return confirm('¿Estás seguro de que deseas salir?')">CERRAR SESIÓN</a></div> -->
+  <div class=" cerrses"><a href="../index.php" onclick="return confirm('¿Estás seguro de que deseas salir?')">CERRAR SESIÓN</a>
+  </div> -->
 
   <?php
   include "finpagadmin.php";
