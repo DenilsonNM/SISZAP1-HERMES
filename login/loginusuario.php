@@ -26,7 +26,7 @@
         <label for="">Usuario:</label>
         <br>
         <input type="text" id="nombre" name="nombre" required>
-        <br><br>
+        <br>
         <label for="">Contraseña:</label>
         <br>
         <input type="text" id="clave" name="clave" required>

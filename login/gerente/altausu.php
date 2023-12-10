@@ -26,7 +26,7 @@
         <label for="usuario">Usuario:</label>
         <br>
         <input type="text" id="usuario" name="usuario" minlength="3" required>
-        <br><br>
+        <br>
         <label for="clave">Contraseña:</label>
         <br>
         <input type="text" id="clave" name="clave" minlength="3" required>
@@ -54,7 +54,7 @@
         <label for="apellido">Apellido(s):</label>
         <br>
         <input type="text" id="apellido" name="apellido" minlength="3" required>
-        <br><br>
+        <br>
         <label for="telcel">Teléfono:</label>
         <br>
         <input type="number" id="telcel" name="telcel" minlength="10" required>

@@ -21,7 +21,7 @@
     <form action="guardarprod.php" method="POST" enctype="multipart/form-data">
       <fieldset>
         <img src="../../images/zaplogo.png" alt="loginlogo" width="60">
-        <br>
+        <br><br>
         <label for="marca">Marca:</label>
         <br>
         <input type="text" id="marca" name="marca" minlength="3" required>
@@ -52,7 +52,7 @@
         <br>
         <input type="number" id="stock" name="stock" required>
         <br><br>
-        <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar')">
+        <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
       </fieldset>
     </form>
   </div>

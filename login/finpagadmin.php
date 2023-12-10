@@ -1,2 +1,2 @@
-<div class="lineanegra"></div>
-<!-- <div class="lineafinal"></div> -->
+<div class="lineanegra2"></div>
+<div class="lineafinal"></div>

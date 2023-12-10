@@ -12,7 +12,9 @@ body {
 .borde {
   border: 1px red solid;
 }
-
+select{
+  padding: 4px;
+}
 /* include menu */
 
 .divtop {
@@ -88,6 +90,10 @@ h2 {
   padding: 4px;
   margin: 20px 30px;
   border-radius: 5px;
+}
+.lineanegra2 {
+  background-color: #333;
+  padding: 44px;
 }
 
 /* index */
@@ -230,11 +236,14 @@ input[type="number"],
 input[type="email"] {
   width: 300px;
   padding: 5px;
+  margin: 5px;
+  text-align: center;
 }
 .formcorreo2 textarea {
   width: 300px;
   resize: none;
   padding: 5px;
+  text-align: center;
 }
 /* login admin */
 
@@ -249,9 +258,12 @@ input[type="email"] {
   padding: 20px;
 }
 .formlogin input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="date"] {
   width: 300px;
   padding: 5px;
+  margin: 5px;
+  text-align: center;
 }
 .formlogininput {
   color: #e3d5cb;
@@ -266,7 +278,7 @@ input[type="number"] {
 }
 .cerrses {
   text-align: center;
-  margin-bottom: 79px;
+  margin-bottom: 64px;
   /* display: inline-block; */
 }
 .cerrses a {
