@@ -21,7 +21,7 @@
   <div class="formcorreo2">
     <form action="enviarencargo.php" method="post" onsubmit="return validarInput()">
       <fieldset>
-        <img src="images/loginlogo.png" alt="loginlogo" width="60">
+        <img src="images/logocontac2.png" alt="loginlogo" width="60">
         <br>
         Nombre:
         <br>

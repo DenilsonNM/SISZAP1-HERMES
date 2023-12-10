@@ -28,9 +28,6 @@ $email = $_POST['email'];
 $nombre = $_POST['nombre'];
 $tele = $_POST['tele'];
 $direc = $_POST['direc'];
-$compr = $_POST['compr'];
-$modelo = $_POST['modelo'];
-$desprod = $_POST['desprod'];
 
 $destino = "denilsonhero2015@gmail.com";
 $cuerpo = '
@@ -39,18 +36,7 @@ $cuerpo = '
         Contacto: ' . $nombre . ' Celular: ' . $tele . '
         <br>
         Dirección de casa: ' . $direc . '
-        <br>
-        ' . $compr . '
-        </p>
-        <br>
-        <h1>Datos del producto:</h1>
-        <p>
-        Modelo: ' . $modelo . '
-        <br>
-        Descripción: ' . $desprod . '
-        </p>
-  ';
-
+        <br>';
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=UTF8\r\n";
 

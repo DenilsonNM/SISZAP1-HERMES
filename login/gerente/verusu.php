@@ -30,6 +30,7 @@
         <th>Teléfono</th>
         <th>Correo</th>
         <th></th>
+        <th></th>
       </tr>
 
       <?php
@@ -47,6 +48,11 @@
           <td><?php echo $row["rol"]; ?></td>
           <td><?php echo $row["telcel"]; ?></td>
           <td><?php echo $row["correo"]; ?></td>
+          <td>
+            <?php
+            echo "<a onclick=\"return confirm('¿Realmente deseas MODIFICAR el EMPLEADO?')\" href='modusu.php?emp_id=" . $row['emp_id'] . "'>Modificar</a>";
+            ?>
+          </td>
           <td><a href="#" onClick="validar('elimusu.php?emp_id=<?php echo $row["emp_id"]; ?>')">Eliminar</a></td>
         </tr>
       <?php

@@ -35,9 +35,8 @@ require "proteccion.php";
     <div class="lineanegra"></div>
   </div>
   <div class="cerrses"><a href="cerrarsesion.php" onclick="return confirm('¿Estás seguro de que deseas salir?')">CERRAR SESIÓN</a></div>
-  <?php
-  include "finpagadmin.php";
-  ?>
+  <div class="lineanegra2"></div>
+  <div class="lineafinal"></div>
 </body>
 
 </html>

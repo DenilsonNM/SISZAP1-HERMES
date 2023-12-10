@@ -11,25 +11,54 @@
 
 <body>
   <?php
+  require "../conexion.php";
   include "inipagadmin.php";
+
+  if (isset($_GET['emp_id'])) {
+
+    $emp_id = $_GET['emp_id'];
+
+    $query = "SELECT * FROM empleados WHERE emp_id = $emp_id";
+    $resultado = mysqli_query($conectar, $query);
+
+    if ($resultado && mysqli_num_rows($resultado) > 0) {
+      $producto = mysqli_fetch_assoc($resultado);
+
+      $emp_id = $producto['emp_id'];
+      $nombre = $producto['nombre'];
+      $apellido = $producto['apellido'];
+      $usuario = $producto['usuario'];
+      $clave = $producto['clave'];
+      $rol = $producto['rol'];
+      $telcel = $producto['telcel'];
+      $correo = $producto['correo'];
+    } else {
+      echo "usuario no encontrado";
+      exit;
+    }
+  } else {
+    echo "No se proporcionaron parámetros en la URL";
+    exit;
+  }
   ?>
   <div class="divtitulo">
-    <h2>Añadir empleados</h2>
+    <h2>Modificar Empleados</h2>
     <div class="lineanegra"></div>
   </div>
   <div class="formlogin">
-    <form action="guardarusu.php" method="POST" onsubmit="return validarContr() && validarInput()">
+
+    <form action="actuusu.php?emp_id= <?= $emp_id ?>" method="POST" onsubmit="return validarContr() && validarInput()">
       <fieldset>
         <legend>Datos de perfil</legend>
         <img src="../../images/loginlogo.png" alt="loginlogo" width="60">
         <br><br>
         <label for="usuario">Usuario:</label>
         <br>
-        <input type="text" id="usuario" name="usuario" minlength="3" required>
+        <input type="text" id="usuario" name="usuario" minlength="3" required value="<?= $usuario ?>">
         <br>
         <label for="clave">Contraseña:</label>
         <br>
-        <input type="text" id="clave" name="clave" minlength="3" required>
+        <input type="text" id="clave" name="clave" minlength="3" required value="<?= $clave ?>">
         <br>
         <label for="clave">Confirma tu contraseña:</label>
         <br>
@@ -49,28 +78,25 @@
         <br><br>
         <label for="nombre">Nombre(s):</label>
         <br>
-        <input type="text" id="nombre" name="nombre" minlength="3" required>
+        <input type="text" id="nombre" name="nombre" minlength="3" required value="<?= $nombre ?>">
         <br>
         <label for="apellido">Apellido(s):</label>
         <br>
-        <input type="text" id="apellido" name="apellido" minlength="3" required>
+        <input type="text" id="apellido" name="apellido" minlength="3" required value="<?= $apellido ?>">
         <br>
         <label for="telcel">Teléfono:</label>
         <br>
-        <input type="number" id="telcel" name="telcel" minlength="10" required>
+        <input type="number" id="telcel" name="telcel" minlength="10" required value="<?= $telcel ?>">
         <br>
         <label for="correo">Correo:</label>
         <br>
-        <input type="email" id="correo" name="correo" minlength="3" required>
+        <input type="email" id="correo" name="correo" minlength="3" required value="<?= $correo ?>">
       </fieldset>
       <br>
-      <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar')">
+      <input class="formlogininput" type="submit" value="ACTUALIZAR" onclick="return confirm('¿Estás seguro de que desea continuar')">
     </form>
   </div>
   <br>
-  <!-- <br><br>
-  <div class=" cerrses"><a href="../index.php" onclick="return confirm('¿Estás seguro de que deseas salir?')">CERRAR SESIÓN</a>
-  </div> -->
 
   <?php
   include "../finpagadmin.php";

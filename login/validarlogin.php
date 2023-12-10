@@ -5,7 +5,9 @@ $nombre = $_POST['nombre'];
 $clave = $_POST['clave'];
 
 session_start();
+
 $_SESSION['nombre'] = $nombre;
+// $_SESSION['emp_id'] = $emp_id;
 
 $query = mysqli_query($conectar, "SELECT * FROM empleados WHERE usuario = '$nombre' AND clave = '$clave'");
 // almacenar el numero de fila

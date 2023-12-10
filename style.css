@@ -7,25 +7,25 @@ body {
   font-family: helvetica;
   font-size: 16px;
   line-height: 24px;
-  color: #7c7773;
+  color: #7a7068;
 }
 .borde {
   border: 1px red solid;
 }
-select{
+select {
   padding: 4px;
 }
 /* include menu */
 
 .divtop {
-  background-color: #e3d5cb;
+  background-color: #ccb3a1;
   text-align: center;
   padding: 5px;
-  color: #7c7773;
+  color: #7a7068;
   height: 30px;
 }
 .logonom h3 {
-  color: #e3d5cb;
+  color: #ccb3a1;
 }
 .divtop2 {
   padding: 20px;
@@ -33,10 +33,10 @@ select{
 }
 h1 {
   font-size: 50px;
-  color: #7c7773;
+  color: #7a7068;
 }
 h2 {
-  color: #7c7773;
+  color: #7a7068;
 }
 .logonom {
   text-align: center;
@@ -57,7 +57,7 @@ h2 {
   border-radius: 40px;
 }
 .loginlogo a:hover {
-  border: 2px #e3d5cb solid;
+  border: 2px #ccb3a1 solid;
 }
 .usermenu {
   clear: both;
@@ -71,7 +71,7 @@ h2 {
   text-decoration: none;
   width: 130px;
   height: 40px;
-  color: #e3d5cb;
+  color: white;
   background-color: #494643;
   border-radius: 15px;
   padding: 10px;
@@ -79,7 +79,7 @@ h2 {
   font-weight: normal;
 }
 .usermenu a:hover {
-  background-color: #7c7773;
+  background-color: #7a7068;
 }
 .divtitulo {
   text-align: center;
@@ -143,7 +143,7 @@ h2 {
 .acercade2 span,
 a {
   font-weight: bold;
-  color: #7c7773;
+  color: #7a7068;
 }
 .tablalentes {
   text-align: center;
@@ -154,7 +154,7 @@ a {
   font-weight: lighter;
   display: inline-block;
   text-decoration: none;
-  color: #e3d5cb;
+  color: white;
   background-color: #494643;
   border-radius: 15px;
   padding: 10px;
@@ -163,10 +163,10 @@ a {
   margin: 20px;
 }
 .tablalentes a:hover {
-  background-color: #7c7773;
+  background-color: #7a7068;
 }
 .tablaprecio {
-  color: #7c7773;
+  color: #7a7068;
 }
 
 /* include divfinal */
@@ -175,7 +175,7 @@ a {
   clear: both;
   background-color: #333;
   margin-top: 20px;
-  color: #e3d5cb;
+  color: white;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -190,13 +190,13 @@ a {
 }
 .divcontac2 {
   padding: 10px;
-  border: 1px #e3d5cb solid;
+  border: 1px #ccb3a1 solid;
   text-align: left;
 }
 
 .lineafinal {
   text-align: center;
-  background-color: #e3d5cb;
+  background-color: #ccb3a1;
   padding: 10px;
 }
 .lineafinal a {
@@ -206,7 +206,7 @@ a {
   border-radius: 40px;
 }
 .lineafinal a:hover {
-  border: 2px #7c7773 solid;
+  border: 2px #7a7068 solid;
 }
 
 /* encargo.php */
@@ -222,14 +222,14 @@ a {
   padding: 20px;
 }
 .formcorreo2 button {
-  color: #e3d5cb;
+  color: white;
   border: none;
   background-color: #494643;
   padding: 10px 15px;
   border-radius: 15px;
 }
 .formcorreo2 button:hover {
-  background-color: #7c7773;
+  background-color: #7a7068;
 }
 .formcorreo2 input[type="text"],
 input[type="number"],
@@ -266,7 +266,7 @@ input[type="date"] {
   text-align: center;
 }
 .formlogininput {
-  color: #e3d5cb;
+  color: white;
   border: none;
   background-color: #494643;
   padding: 10px 15px;
@@ -284,7 +284,7 @@ input[type="date"] {
 .cerrses a {
   display: inline-block;
   text-decoration: none;
-  color: #e3d5cb;
+  color: white;
   background-color: #494643;
   padding: 10px 15px;
   border-radius: 15px;
@@ -299,7 +299,7 @@ input[type="date"] {
 .cerrses2 a {
   display: inline-block;
   text-decoration: none;
-  color: #e3d5cb;
+  color: white;
   background-color: #494643;
   padding: 5px 15px;
   border-radius: 15px;
@@ -330,13 +330,13 @@ input[type="date"] {
 }
 .tablausu th {
   background-color: #494643;
-  color: #e3d5cb;
+  color: #ccb3a1;
   padding: 10px;
 }
 .tablausu td {
   padding: 10px;
   /* background-color: #ECF2F6; */
-  border-bottom: 1px #7c7773 solid;
+  border-bottom: 1px #7a7068 solid;
 }
 .tablausu a {
   text-decoration: none;
@@ -356,10 +356,10 @@ input[type="date"] {
 }
 .tendencias th {
   background-color: #494643;
-  color: #e3d5cb;
+  color: #ccb3a1;
   padding: 10px;
 }
 .tendencias td {
   padding: 10px;
-  border-bottom: 1px #7c7773 solid;
+  border-bottom: 1px #7a7068 solid;
 }

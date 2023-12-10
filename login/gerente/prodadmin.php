@@ -24,9 +24,8 @@
     <a href="altaprod.php">Añadir</a>
   </div>
   <br><br>
-  <?php
-  include "../finpagadmin.php";
-  ?>
+  <div class="lineanegra2"></div>
+  <div class="lineafinal"></div>
 </body>
 
 </html>
