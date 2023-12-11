@@ -6,19 +6,20 @@ $clave = $_POST['clave'];
 
 session_start();
 
-$_SESSION['nombre'] = $nombre;
-// $_SESSION['emp_id'] = $emp_id;
-
 $query = mysqli_query($conectar, "SELECT * FROM empleados WHERE usuario = '$nombre' AND clave = '$clave'");
-// almacenar el numero de fila
+
 $nr = mysqli_num_rows($query);
 
 if ($nr == 1) {
-
+  // Obtener los datos del usuario
   $row = mysqli_fetch_assoc($query);
-  $row = $row['rol'];
 
-  switch ($row) {
+  // Almacenar el nombre y emp_id en la sesión
+  $_SESSION['nombre'] = $row['nombre'];
+  $_SESSION['emp_id'] = $row['emp_id'];
+
+  // Redirigir según el rol del usuario
+  switch ($row['rol']) {
 
     case 'admin':
       header("location: logininicio.php");
@@ -39,12 +40,12 @@ if ($nr == 1) {
 } else {
   include("loginusuario.php");
 ?>
-  <div class="errorlogin">
-    <h3>Usuario ó contraseña incorrectos</h3>
+  <div class="errorlogin2">
+    <h3>Usuario ó contraseña incorrecta</h3>
   </div>
 <?php
   exit;
 }
 mysqli_free_result($query);
-mysqli_close($conectar)
+mysqli_close($conectar);
 ?>

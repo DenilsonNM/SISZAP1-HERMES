@@ -51,9 +51,10 @@
         <label for="stock">Stock:</label>
         <br>
         <input type="number" id="stock" name="stock" required>
-        <br><br>
-        <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
       </fieldset>
+      <br>
+      <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea GUARDAR?')">
+      <input style="margin-left: 50px;" class="formlogininput2" type="reset" value="BORRAR" onclick="return confirm('¿Estás seguro de que desea BORRAR?')">
     </form>
   </div>
   <br>

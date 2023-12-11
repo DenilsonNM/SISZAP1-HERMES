@@ -24,6 +24,13 @@ select {
   color: #7a7068;
   height: 30px;
 }
+.usuariotop {
+  background-color: #ccb3a1;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+}
 .logonom h3 {
   color: #ccb3a1;
 }
@@ -233,7 +240,8 @@ a {
 }
 .formcorreo2 input[type="text"],
 input[type="number"],
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
   width: 300px;
   padding: 5px;
   margin: 5px;
@@ -259,7 +267,8 @@ input[type="email"] {
 }
 .formlogin input[type="text"],
 input[type="number"],
-input[type="date"] {
+input[type="date"],
+input[type="password"] {
   width: 300px;
   padding: 5px;
   margin: 5px;
@@ -275,6 +284,17 @@ input[type="date"] {
 }
 .formlogininput:hover {
   background-color: #58a848;
+}
+.formlogininput2 {
+  color: white;
+  border: none;
+  background-color: #494643;
+  padding: 10px 15px;
+  border-radius: 15px;
+  /* font-size: 20px; */
+}
+.formlogininput2:hover {
+  background-color: #c4405c;
 }
 .cerrses {
   text-align: center;
@@ -313,7 +333,15 @@ input[type="date"] {
 }
 
 .errorlogin {
-  color: #ac1637;
+  color: #c4405c;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  background-color: #ccb3a1;
+  padding: 10px 0px 50px 0px;
+}
+.errorlogin2 {
+  color: #c4405c;
   text-align: center;
   font-size: 30px;
   margin-bottom: 30px;

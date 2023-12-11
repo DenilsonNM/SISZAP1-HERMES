@@ -27,6 +27,7 @@
         <th>Precio</th>
         <th>Imagen</th>
         <th>Estado</th>
+        <th>Stock</th>
       </tr>
 
       <?php
@@ -36,7 +37,6 @@
       while ($row = mysqli_fetch_assoc($resultado)) {
       ?>
         <tr>
-  
           <td><?php echo $row["marca"]; ?></td>
           <td><?php echo $row["modelo"]; ?></td>
           <td><?php echo $row["descrip"]; ?></td>
@@ -45,10 +45,11 @@
           echo "<td><img width='100' src='data:image/png;base64," . base64_encode($row['foto']) . "'></td>";
           ?>
           <td><?php echo $row["estado"]; ?></td>
-      <?php
+          <td><?php echo $row["stock"]; ?></td>
+        <?php
       }
       mysqli_free_result($resultado)
-      ?>
+        ?>
     </table>
   </div>
   <br>

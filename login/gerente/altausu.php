@@ -22,7 +22,7 @@
       <fieldset>
         <legend>Datos de perfil</legend>
         <img src="../../images/loginlogo.png" alt="loginlogo" width="60">
-        <br><br>
+        <br>
         <label for="usuario">Usuario:</label>
         <br>
         <input type="text" id="usuario" name="usuario" minlength="3" required>
@@ -46,7 +46,7 @@
       <fieldset>
         <legend>Datos de contacto</legend>
         <img src="../../images/logocontac.png" alt="loginlogo" width="60">
-        <br><br>
+        <br>
         <label for="nombre">Nombre(s):</label>
         <br>
         <input type="text" id="nombre" name="nombre" minlength="3" required>
@@ -65,6 +65,7 @@
       </fieldset>
       <br>
       <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar')">
+      <input style="margin-left: 50px;" class="formlogininput2" type="reset" value="BORRAR" onclick="return confirm('¿Estás seguro de que desea BORRAR?')">
     </form>
   </div>
   <br>

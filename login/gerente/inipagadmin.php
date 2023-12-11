@@ -1,7 +1,17 @@
 <?php
 require "proteccion.php";
+if (!isset($_SESSION['nombre'])) {
+  echo "La variable de sesión 'emp_id' no está establecida.";
+} else {
 ?>
-<div class="divtop"></div>
+  <div class="usuariotop">
+    <?php
+    echo "Bienvenido " . $_SESSION['nombre'];
+    ?>
+  </div>
+<?php
+}
+?>
 <div class="divtop2">
   <div class="logonom">
     <br>

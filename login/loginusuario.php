@@ -29,7 +29,7 @@
         <br>
         <label for="">Contraseña:</label>
         <br>
-        <input type="text" id="clave" name="clave" required>
+        <input type="password" id="clave" name="clave" required>
         <br><br>
         <input class="formlogininput" type="submit" value="INICIAR SESIÓN">
       </fieldset>

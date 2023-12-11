@@ -52,7 +52,7 @@
           <td><?php echo $row["stock"]; ?></td>
           <td>
             <?php
-            echo "<a href='modprod.php?prod_id=" . $row['prod_id'] . "'>Modificar</a>";
+            echo "<a onclick=\"return confirm('¿Realmente deseas MODIFICAR este PRODUCTO?')\" href='modprod.php?prod_id=" . $row['prod_id'] . "'>Modificar</a>";
             ?>
           </td>
           <td><a href="#" onClick="validar('elimprod.php?prod_id=<?php echo $row["prod_id"]; ?>')">Eliminar</a></td>
@@ -64,8 +64,6 @@
     </table>
   </div>
   <br>
-  <!-- <br><br>
-  <div class="cerrses"><a href="../index.php" onclick="return confirm('¿Estás seguro de que deseas salir?')">CERRAR SESIÓN</a></div> -->
 
   <?php
   include "../finpagadmin.php";

@@ -51,7 +51,7 @@
       <fieldset>
         <legend>Datos de perfil</legend>
         <img src="../../images/loginlogo.png" alt="loginlogo" width="60">
-        <br><br>
+        <br>
         <label for="usuario">Usuario:</label>
         <br>
         <input type="text" id="usuario" name="usuario" minlength="3" required value="<?= $usuario ?>">
@@ -75,7 +75,7 @@
       <fieldset>
         <legend>Datos de contacto</legend>
         <img src="../../images/logocontac.png" alt="loginlogo" width="60">
-        <br><br>
+        <br>
         <label for="nombre">Nombre(s):</label>
         <br>
         <input type="text" id="nombre" name="nombre" minlength="3" required value="<?= $nombre ?>">
@@ -94,6 +94,7 @@
       </fieldset>
       <br>
       <input class="formlogininput" type="submit" value="ACTUALIZAR" onclick="return confirm('¿Estás seguro de que desea continuar')">
+      <input style="margin-left: 50px;" class="formlogininput2" type="reset" value="RESTABLECER" onclick="return confirm('¿Estás seguro de que desea RESTABLECER?')">
     </form>
   </div>
   <br>

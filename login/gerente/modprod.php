@@ -61,7 +61,7 @@
         <br>
         <label for="descrip">Descripcion:</label>
         <br>
-        <input type="text" id="descrip" name="descrip" value="<?= $descrip ?>" required>
+        <input type="text" id="descrip" name="descrip" value="<?= $descrip ?>" required placeholder="Tipo/Color/Talla">
         <br>
         <label for="precio">Precio:</label>
         <br>
@@ -80,9 +80,10 @@
         <label for="stock">Stock:</label>
         <br>
         <input type="number" id="stock" name="stock" value="<?= $stock ?>" required>
-        <br><br>
-        <input class="formlogininput" type="submit" value="ACTUALIZAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
       </fieldset>
+      <br>
+      <input class="formlogininput" type="submit" value="ACTUALIZAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
+      <input style="margin-left: 50px;" class="formlogininput2" type="reset" value="RESTABLECER" onclick="return confirm('¿Estás seguro de que desea RESTABLECER?')">
     </form>
   </div>
   <br>
