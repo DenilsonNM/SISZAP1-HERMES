@@ -36,7 +36,7 @@ if (!isset($_SESSION['nombre'])) {
     <br><br>
     <a href="logininiciocaje.php">INICIO</a>
     <a href="cajero/ventadmin.php">VENTAS</a>
-    <a href="cajero/verprod.php">CATÁLOGO</a>
+    <a target="_blank" href="cajero/verprod.php">CATÁLOGO</a>
   </div>
   <div class="divtitulo">
     <h2>Cajero</h2>

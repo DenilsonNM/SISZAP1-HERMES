@@ -15,6 +15,8 @@
   require "../conexion.php";
   $queryMarcas = "SELECT DISTINCT CONCAT (marca, ' - ', modelo, ' - ', descrip) AS marca_modelo_descrip, precio, stock FROM productos";
   $resultadoMarcas = mysqli_query($conectar, $queryMarcas);
+
+
   ?>
   <div class="divtitulo">
     <h2>Registrar venta</h2>
@@ -57,9 +59,47 @@
         <br>
         <input type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" readonly>
         <br><br>
-        <input class="formlogininput" type="submit" value="GUARDAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
+        <input class="formlogininput" type="submit" value="REGISTRAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
+        <input style="margin-left: 50px;" class="formlogininput2" type="reset" value="BORRAR" onclick="return confirm('¿Estás seguro de que desea BORRAR?')">
       </fieldset>
     </form>
+    <br><br>
+    <div class="lineanegra"></div>
+    <br>
+    <div class="tablausu">
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Vendedor</th>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Cliente</th>
+          <th>Fecha</th>
+        </tr>
+
+        <?php
+        $todosUsuarios = "SELECT * FROM ventaprod ORDER BY venta_id ASC";
+        $resultado = mysqli_query($conectar, $todosUsuarios);
+        while ($row = mysqli_fetch_assoc($resultado)) {
+        ?>
+          <tr>
+            <td><?php echo $row["venta_id"]; ?></td>
+            <td><?php echo $row["vendedor"]; ?></td>
+            <td><?php echo $row["producto"]; ?></td>
+            <td>$<?php echo $row["precio"]; ?></td>
+            <td><?php echo $row["cantidad"]; ?></td>
+            <td>$<?php echo $row["total"]; ?></td>
+            <td><?php echo $row["cliente"]; ?></td>
+            <td><?php echo $row["fecha"]; ?></td>
+          </tr>
+        <?php
+        }
+        mysqli_free_result($resultado)
+        ?>
+      </table>
+    </div>
   </div>
   <script>
     document.getElementById('producto').addEventListener('change', function() {

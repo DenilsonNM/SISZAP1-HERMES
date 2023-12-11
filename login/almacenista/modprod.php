@@ -65,13 +65,14 @@
         <br>
         <label for="precio">Precio:</label>
         <br>
-        <input type="number" id="precio" name="precio" value="<?= $precio ?>" required>
+        <input type="number" step="0.01" min=0 id="precio" name="precio" value="<?= $precio ?>" required>
         <br><br>
         <label for="foto">Imagen (jpeg, png, jpg):</label>
         <br>
         <input type="file" id="foto" name="foto" accept=".png, .jpeg, .jpg" required>
         <br><br>
         <label for="estado">Estado:</label>
+        <br>
         <select name="estado" id="estado" required>
           <option value="Disponible">Disponible</option>
           <option value="Agotado">Agotado</option>
@@ -79,7 +80,7 @@
         <br><br>
         <label for="stock">Stock:</label>
         <br>
-        <input type="number" id="stock" name="stock" value="<?= $stock ?>" required>
+        <input type="number" id="stock" name="stock" min=0 value="<?= $stock ?>" required>
       </fieldset>
       <br>
       <input class="formlogininput" type="submit" value="ACTUALIZAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">

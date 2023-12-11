@@ -20,8 +20,7 @@
     <div class="lineanegra"></div>
   </div>
   <div class="usermenu">
-    <a href="verventa.php">Ver</a>
-    <a href="altaventa.php">Añadir</a>
+    <a href="altaventa.php">Registrar</a>
   </div>
   <br><br>
   <div class="lineanegra2"></div>
