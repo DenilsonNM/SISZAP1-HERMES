@@ -24,5 +24,5 @@ if (!isset($_SESSION['nombre'])) {
   <br><br>
   <a href="../logininiciocaje.php">INICIO</a>
   <a href="ventadmin.php">VENTAS</a>
-  <a href="verprod.php">CATÁLOGO</a>
+  <a target="_blank" href="verprod.php">CATÁLOGO</a>
 </div>

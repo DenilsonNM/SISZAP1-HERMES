@@ -41,7 +41,7 @@
         <br>
         <label for="precio">Precio:</label>
         <br>
-        <input type="number" step="0.01" id="precio" name="precio" readonly>
+        <input type="number" step="0.01" id="precio" name="precio" required readonly>
         <br>
         <label for="cantidad">Cantidad:</label>
         <br>
@@ -49,7 +49,7 @@
         <br>
         <label for="total">Total:</label>
         <br>
-        <input type="number" step="0.01" id="total" name="total" required readonly>
+        <input type="number" step="0.01" id="total" name="total" required required readonly>
         <br>
         <label for="cliente">Datos de cliente:</label>
         <br>
@@ -57,7 +57,7 @@
         <br>
         <label for="fecha">Fecha:</label>
         <br>
-        <input type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" readonly>
+        <input type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" required readonly>
         <br><br>
         <input class="formlogininput" type="submit" value="REGISTRAR" onclick="return confirm('¿Estás seguro de que desea continuar?')">
         <input style="margin-left: 50px;" class="formlogininput2" type="reset" value="BORRAR" onclick="return confirm('¿Estás seguro de que desea BORRAR?')">
