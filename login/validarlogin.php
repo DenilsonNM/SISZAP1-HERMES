@@ -17,6 +17,7 @@ if ($nr == 1) {
   // Almacenar el nombre y emp_id en la sesión
   $_SESSION['nombre'] = $row['nombre'];
   $_SESSION['emp_id'] = $row['emp_id'];
+  $_SESSION['apellido'] = $row['apellido'];
 
   // Redirigir según el rol del usuario
   switch ($row['rol']) {

@@ -22,6 +22,10 @@
       <fieldset>
         <img src="../../images/ventalogo.png" alt="loginlogo" width="60">
         <br><br>
+        <label for="vendedor">Vendedor:</label>
+        <br>
+        <input type="text" id="vendedor" name="vendedor" readonly value="<?php echo $_SESSION['nombre'] . ' ' . $_SESSION['apellido']; ?>">
+        <br>
         <label for="producto">Producto:</label>
         <br>
         <select name="producto" id="producto" required>

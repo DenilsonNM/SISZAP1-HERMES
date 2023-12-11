@@ -63,8 +63,9 @@
         <label for="clave">Confirma tu contraseña:</label>
         <br>
         <input type="text" id="clave2" name="clave2" minlength="3" required>
-        <br><br>
+        <br>
         <label for="rol">Rol:</label>
+        <br>
         <select name="rol" id="rol" required>
           <option value="Gerente">Gerente</option>
           <option value="Cajero">Cajero</option>
